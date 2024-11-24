@@ -1,0 +1,2331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cocopav</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CDN -->
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fontawesome -->
+
+    <!-- OWL CAROUSELL -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- OWL CAROUSELL -->
+
+    <!-- FLICKITY -->
+    <link rel="stylesheet" href="assets/css-extra/flickity.min.css" />
+
+    <!-- FLIKITY -->
+    <link rel="stylesheet" href="assets/styleumum.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style2.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg"
+      style="z-index: 99; background-color: #e6e7e8"
+    >
+      <div
+        class="box-navbar position-absolute w-100"
+        style="top: -500px; z-index: 99"
+        id="navbar-responsive-top"
+      >
+        <div class="container">
+          <div class="row">
+            <div onclick="navbarUnResponsive()" class="col-md-12 text-end">
+              <span>X</span>
+            </div>
+            <div class="col-md-12 text-center">
+              <p class="fw-bold">PODS</p>
+            </div>
+            <div class="col-md-12 w-100 mb-2 text-center">
+              <div class="m-auto button-nav" style="width: 200px">
+                <a
+                  href="product_lite.html"
+                  class="text-decoration-none text-dark"
+                  >Cocopav LITE</a
+                >
+              </div>
+            </div>
+            <div class="col-md-12 w-100 mb-2 text-center">
+              <div class="m-auto button-nav" style="width: 200px">
+                <a
+                  href="product_fit.html"
+                  class="text-decoration-none text-dark"
+                  >Cocopav FIT</a
+                >
+              </div>
+            </div>
+            <hr />
+            <div class="col-md-12 w-100 mb-2 text-center">
+              <div class="m-auto button-nav" style="width: 200px">
+                <a href="hot_promo.html" class="text-decoration-none text-dark"
+                  >HOT Promo</a
+                >
+              </div>
+            </div>
+            <div class="col-md-12 w-100 mb-2 text-center">
+              <div class="m-auto button-nav" style="width: 200px">
+                <a href="#" class="text-decoration-none text-dark">Partner</a>
+              </div>
+            </div>
+            <div class="col-md-12 w-100 mb-2 text-center">
+              <div class="m-auto button-nav" style="width: 200px">
+                <a href="#" class="text-decoration-none text-dark"
+                  >Hubungi Kami</a
+                >
+              </div>
+            </div>
+            <div class="col-md-12 mt-2 text-center">
+              <p class="text-white">HOME</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <a class="navbar-brand text-center" href="index.html">
+          <img
+            src="assets/images/logo.png"
+            alt="logo"
+            class="img-fluid img-nav"
+          />
+        </a>
+
+        <div
+          class="p-2 d-flex align-items-center position-relative d-block d-md-none"
+          style="border-radius: 50px; background-color: #f4dc10"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute">
+            <li class="nav-item dropdown">
+              <span
+                class="nav-link dropdown-toggle btn btn-circle radius-circle btn-md fs-5 neu-outset-nav"
+                href="#"
+                data-bs-toggle="dropdown"
+                onclick="navbarResponsive()"
+              >
+                <img src="./assets/images/Menu_icon.svg" />
+              </span>
+            </li>
+          </ul>
+
+          <button
+            type="button"
+            class="btn text-white neu-outset-nav-green rounded px-4 py-2"
+            style="margin-left: 60px"
+          >
+            <img class="buy-icon" src="./assets/images/Buy_icon.svg" /> Beli
+            Cocopav
+          </button>
+        </div>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="justify-content: flex-end"
+        >
+          <ul class="navbar-nav mr-auto d-block d-md-none text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="product_fit.html">Pods </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#section-5">Hot Promo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hubungi Kami</a>
+            </li>
+          </ul>
+          <div
+            class="d-flex d-none d-md-flex p-3"
+            style="border-radius: 50px; background-color: #f4dc10"
+          >
+            <button
+              class="btn btn-circle radius-circle btn-md fs-5 neu-inset-nav"
+            >
+              <a href="index.html" class="text-dark">
+                <img src="./assets/images/Home_icon.svg" />
+              </a>
+            </button>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-relative">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle btn btn-circle radius-circle btn-md fs-5 neu-outset-nav ms-3"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <img src="./assets/images/Menu_icon.svg" />
+                </a>
+                <ul class="dropdown-menu">
+                  <div class="segitiga"></div>
+                  <li>
+                    <a class="dropdown-item" href="product_fit.html"> Pods</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/#section-4"> Hot Promo </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/#section-5"> Partner </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <button
+              type="button"
+              class="btn text-white neu-outset-nav-green rounded ms-3 px-4 py-0"
+            >
+              <img class="buy-icon" src="./assets/images/Buy_icon.svg" /> Beli
+              Cocopav
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar -->
+
+    <!-- Section 3 -- Section Pilihan Rasa -->
+    <section id="section-3" class="product">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex justify-content-between">
+            <a
+              href="product_fit.html"
+              class="text-dark text-decoration-none d-none d-md-block text-dark"
+            >
+              <i class="fa fa-long-arrow-left"></i> Kembali
+            </a>
+            <a
+              href="product_fit.html"
+              class="text-dark text-decoration-none d-block d-md-none"
+            >
+              <i class="fa fa-angle-left text-dark"></i>
+            </a>
+            <a
+              href="product_fit.html"
+              class="text-dark text-decoration-none d-none d-md-block text-dark"
+            >
+              Cocopav Lite <i class="fa fa-long-arrow-right"></i>
+            </a>
+            <a
+              href="product_fit.html"
+              class="text-decoration-none d-block d-md-none text-dark"
+            >
+              FIT <i class="fa fa-long-arrow-right text-dark"></i>
+            </a>
+          </div>
+          <div class="col-md-12 text-center">
+            <img src="assets/images/lite-logo.png" alt="" class="img-fluid" />
+            <p class="mt-3 fs-6 mx-5">
+              Cocopav LITE disposable pods, si mungil super compact karena
+              ukurannya yang hanya 7 cm. Berkapasitas 500 puff dan baterai 440
+              mAh, membuat kamu tidak akan percaya si mungil ini tahan lama
+              kenikmatannya. Ditambah e-liquid 2.2 ml dengan pilihan rasa yang
+              selalu bikin rindu. Design colorful dan sangat mudah di bawa
+              kemana saja. Tapa refill, tapa recharge, anti ribet!
+            </p>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="item">
+              <div class="card-vape p-3">
+                <div class="row">
+                  <div
+                    class="col-12"
+                    style="cursor: zoom-in"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="shader">
+                      <img
+                        src="assets/images/product/asset-3.png"
+                        alt=""
+                        class="img-fluid product-rounded"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <p class="fs-5 text-dark">Mint</p>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <button
+                      type="button"
+                      class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                    >
+                      <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-0">
+                  <div class="modal-body p-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12 text-end">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img
+                          src="assets/images/product/Vape-1.png"
+                          alt=""
+                          class="img-fluid"
+                          style="height: 400px"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <h1>BANANA</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sapiente veritatis ipsam vero expedita eos ab
+                          totam aliquam. Quidem itaque provident veritatis ab
+                          quaerat maiores!
+                          <br />
+                          <br />
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aut molestias ea ad eveniet quo illum dicta id
+                          tempora soluta dolor voluptate neque quod tempore, sit
+                          labore voluptatem cupiditate delectus quas?
+                        </p>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/puff.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                500 puff
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/salt.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff img-salt"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                2% Salt Nic
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/baterai.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                400 MAh
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="box-price">
+                          <p class="fs-1 text-center">IDR 58.000</p>
+                          <div class="d-grid gap-2 d-md-block">
+                            <button
+                              type="button"
+                              class="btn text-white button-product button-product-rev rounded p-2 px-5"
+                              style="width: 100%"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="box-warning text-center p-3">
+                          <h5>PERINGATAN:</h5>
+                          <p>
+                            Produk ini mengandung nikotin yang merupakan <br />
+                            bahan kimia bersifat adiktif.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="item">
+              <div class="card-vape p-3">
+                <div class="row">
+                  <div
+                    class="col-12"
+                    style="cursor: zoom-in"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="shader">
+                      <img
+                        src="assets/images/product/asset-3.png"
+                        alt=""
+                        class="img-fluid product-rounded"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <p class="fs-5 text-dark">Mint</p>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <button
+                      type="button"
+                      class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                    >
+                      <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-0">
+                  <div class="modal-body p-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12 text-end">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img
+                          src="assets/images/product/Vape-1.png"
+                          alt=""
+                          class="img-fluid"
+                          style="height: 400px"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <h1>BANANA</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sapiente veritatis ipsam vero expedita eos ab
+                          totam aliquam. Quidem itaque provident veritatis ab
+                          quaerat maiores!
+                          <br />
+                          <br />
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aut molestias ea ad eveniet quo illum dicta id
+                          tempora soluta dolor voluptate neque quod tempore, sit
+                          labore voluptatem cupiditate delectus quas?
+                        </p>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/puff.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                500 puff
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/salt.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff img-salt"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                2% Salt Nic
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/baterai.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                400 MAh
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="box-price">
+                          <p class="fs-1 text-center">IDR 58.000</p>
+                          <div class="d-grid gap-2 d-md-block">
+                            <button
+                              type="button"
+                              class="btn text-white button-product button-product-rev rounded p-2 px-5"
+                              style="width: 100%"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="box-warning text-center p-3">
+                          <h5>PERINGATAN:</h5>
+                          <p>
+                            Produk ini mengandung nikotin yang merupakan <br />
+                            bahan kimia bersifat adiktif.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="item">
+              <div class="card-vape p-3">
+                <div class="row">
+                  <div
+                    class="col-12"
+                    style="cursor: zoom-in"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="shader">
+                      <img
+                        src="assets/images/product/asset-3.png"
+                        alt=""
+                        class="img-fluid product-rounded"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <p class="fs-5 text-dark">Mint</p>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <button
+                      type="button"
+                      class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                    >
+                      <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-0">
+                  <div class="modal-body p-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12 text-end">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img
+                          src="assets/images/product/Vape-1.png"
+                          alt=""
+                          class="img-fluid"
+                          style="height: 400px"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <h1>BANANA</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sapiente veritatis ipsam vero expedita eos ab
+                          totam aliquam. Quidem itaque provident veritatis ab
+                          quaerat maiores!
+                          <br />
+                          <br />
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aut molestias ea ad eveniet quo illum dicta id
+                          tempora soluta dolor voluptate neque quod tempore, sit
+                          labore voluptatem cupiditate delectus quas?
+                        </p>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/puff.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                500 puff
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/salt.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff img-salt"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                2% Salt Nic
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/baterai.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                400 MAh
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="box-price">
+                          <p class="fs-1 text-center">IDR 58.000</p>
+                          <div class="d-grid gap-2 d-md-block">
+                            <button
+                              type="button"
+                              class="btn text-white button-product button-product-rev rounded p-2 px-5"
+                              style="width: 100%"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="box-warning text-center p-3">
+                          <h5>PERINGATAN:</h5>
+                          <p>
+                            Produk ini mengandung nikotin yang merupakan <br />
+                            bahan kimia bersifat adiktif.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="item">
+              <div class="card-vape p-3">
+                <div class="row">
+                  <div
+                    class="col-12"
+                    style="cursor: zoom-in"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="shader">
+                      <img
+                        src="assets/images/product/asset-3.png"
+                        alt=""
+                        class="img-fluid product-rounded"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <p class="fs-5 text-dark">Mint</p>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <button
+                      type="button"
+                      class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                    >
+                      <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-0">
+                  <div class="modal-body p-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12 text-end">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img
+                          src="assets/images/product/Vape-1.png"
+                          alt=""
+                          class="img-fluid"
+                          style="height: 400px"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <h1>BANANA</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sapiente veritatis ipsam vero expedita eos ab
+                          totam aliquam. Quidem itaque provident veritatis ab
+                          quaerat maiores!
+                          <br />
+                          <br />
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aut molestias ea ad eveniet quo illum dicta id
+                          tempora soluta dolor voluptate neque quod tempore, sit
+                          labore voluptatem cupiditate delectus quas?
+                        </p>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/puff.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                500 puff
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/salt.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff img-salt"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                2% Salt Nic
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/baterai.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                400 MAh
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="box-price">
+                          <p class="fs-1 text-center">IDR 58.000</p>
+                          <div class="d-grid gap-2 d-md-block">
+                            <button
+                              type="button"
+                              class="btn text-white button-product button-product-rev rounded p-2 px-5"
+                              style="width: 100%"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="box-warning text-center p-3">
+                          <h5>PERINGATAN:</h5>
+                          <p>
+                            Produk ini mengandung nikotin yang merupakan <br />
+                            bahan kimia bersifat adiktif.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="item">
+              <div class="card-vape p-3">
+                <div class="row">
+                  <div
+                    class="col-12"
+                    style="cursor: zoom-in"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="shader">
+                      <img
+                        src="assets/images/product/asset-3.png"
+                        alt=""
+                        class="img-fluid product-rounded"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <p class="fs-5 text-dark">Mint</p>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <button
+                      type="button"
+                      class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                    >
+                      <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-0">
+                  <div class="modal-body p-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12 text-end">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img
+                          src="assets/images/product/Vape-1.png"
+                          alt=""
+                          class="img-fluid"
+                          style="height: 400px"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <h1>BANANA</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sapiente veritatis ipsam vero expedita eos ab
+                          totam aliquam. Quidem itaque provident veritatis ab
+                          quaerat maiores!
+                          <br />
+                          <br />
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aut molestias ea ad eveniet quo illum dicta id
+                          tempora soluta dolor voluptate neque quod tempore, sit
+                          labore voluptatem cupiditate delectus quas?
+                        </p>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/puff.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                500 puff
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/salt.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff img-salt"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                2% Salt Nic
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/baterai.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                400 MAh
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="box-price">
+                          <p class="fs-1 text-center">IDR 58.000</p>
+                          <div class="d-grid gap-2 d-md-block">
+                            <button
+                              type="button"
+                              class="btn text-white button-product button-product-rev rounded p-2 px-5"
+                              style="width: 100%"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="box-warning text-center p-3">
+                          <h5>PERINGATAN:</h5>
+                          <p>
+                            Produk ini mengandung nikotin yang merupakan <br />
+                            bahan kimia bersifat adiktif.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="item">
+              <div class="card-vape p-3">
+                <div class="row">
+                  <div
+                    class="col-12"
+                    style="cursor: zoom-in"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="shader">
+                      <img
+                        src="assets/images/product/asset-3.png"
+                        alt=""
+                        class="img-fluid product-rounded"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <p class="fs-5 text-dark">Mint</p>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <button
+                      type="button"
+                      class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                    >
+                      <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-0">
+                  <div class="modal-body p-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12 text-end">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img
+                          src="assets/images/product/Vape-1.png"
+                          alt=""
+                          class="img-fluid"
+                          style="height: 400px"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <h1>BANANA</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sapiente veritatis ipsam vero expedita eos ab
+                          totam aliquam. Quidem itaque provident veritatis ab
+                          quaerat maiores!
+                          <br />
+                          <br />
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aut molestias ea ad eveniet quo illum dicta id
+                          tempora soluta dolor voluptate neque quod tempore, sit
+                          labore voluptatem cupiditate delectus quas?
+                        </p>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/puff.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                500 puff
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/salt.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff img-salt"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                2% Salt Nic
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/baterai.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                400 MAh
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="box-price">
+                          <p class="fs-1 text-center">IDR 58.000</p>
+                          <div class="d-grid gap-2 d-md-block">
+                            <button
+                              type="button"
+                              class="btn text-white button-product button-product-rev rounded p-2 px-5"
+                              style="width: 100%"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="box-warning text-center p-3">
+                          <h5>PERINGATAN:</h5>
+                          <p>
+                            Produk ini mengandung nikotin yang merupakan <br />
+                            bahan kimia bersifat adiktif.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="item">
+              <div class="card-vape p-3">
+                <div class="row">
+                  <div
+                    class="col-12"
+                    style="cursor: zoom-in"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="shader">
+                      <img
+                        src="assets/images/product/asset-3.png"
+                        alt=""
+                        class="img-fluid product-rounded"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <p class="fs-5 text-dark">Mint</p>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <button
+                      type="button"
+                      class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                    >
+                      <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-0">
+                  <div class="modal-body p-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12 text-end">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img
+                          src="assets/images/product/Vape-1.png"
+                          alt=""
+                          class="img-fluid"
+                          style="height: 400px"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <h1>BANANA</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sapiente veritatis ipsam vero expedita eos ab
+                          totam aliquam. Quidem itaque provident veritatis ab
+                          quaerat maiores!
+                          <br />
+                          <br />
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aut molestias ea ad eveniet quo illum dicta id
+                          tempora soluta dolor voluptate neque quod tempore, sit
+                          labore voluptatem cupiditate delectus quas?
+                        </p>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/puff.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                500 puff
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/salt.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff img-salt"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                2% Salt Nic
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/baterai.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                400 MAh
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="box-price">
+                          <p class="fs-1 text-center">IDR 58.000</p>
+                          <div class="d-grid gap-2 d-md-block">
+                            <button
+                              type="button"
+                              class="btn text-white button-product button-product-rev rounded p-2 px-5"
+                              style="width: 100%"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="box-warning text-center p-3">
+                          <h5>PERINGATAN:</h5>
+                          <p>
+                            Produk ini mengandung nikotin yang merupakan <br />
+                            bahan kimia bersifat adiktif.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="item">
+              <div class="card-vape p-3">
+                <div class="row">
+                  <div
+                    class="col-12"
+                    style="cursor: zoom-in"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="shader">
+                      <img
+                        src="assets/images/product/asset-3.png"
+                        alt=""
+                        class="img-fluid product-rounded"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <p class="fs-5 text-dark">Mint</p>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <button
+                      type="button"
+                      class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                    >
+                      <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-0">
+                  <div class="modal-body p-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12 text-end">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img
+                          src="assets/images/product/Vape-1.png"
+                          alt=""
+                          class="img-fluid"
+                          style="height: 400px"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <h1>BANANA</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sapiente veritatis ipsam vero expedita eos ab
+                          totam aliquam. Quidem itaque provident veritatis ab
+                          quaerat maiores!
+                          <br />
+                          <br />
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aut molestias ea ad eveniet quo illum dicta id
+                          tempora soluta dolor voluptate neque quod tempore, sit
+                          labore voluptatem cupiditate delectus quas?
+                        </p>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/puff.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                500 puff
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/salt.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff img-salt"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                2% Salt Nic
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/baterai.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                400 MAh
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="box-price">
+                          <p class="fs-1 text-center">IDR 58.000</p>
+                          <div class="d-grid gap-2 d-md-block">
+                            <button
+                              type="button"
+                              class="btn text-white button-product button-product-rev rounded p-2 px-5"
+                              style="width: 100%"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="box-warning text-center p-3">
+                          <h5>PERINGATAN:</h5>
+                          <p>
+                            Produk ini mengandung nikotin yang merupakan <br />
+                            bahan kimia bersifat adiktif.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="item">
+              <div class="card-vape p-3">
+                <div class="row">
+                  <div
+                    class="col-12"
+                    style="cursor: zoom-in"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="shader">
+                      <img
+                        src="assets/images/product/asset-3.png"
+                        alt=""
+                        class="img-fluid product-rounded"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <p class="fs-5 text-dark">Mint</p>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <button
+                      type="button"
+                      class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                    >
+                      <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-0">
+                  <div class="modal-body p-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12 text-end">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img
+                          src="assets/images/product/Vape-1.png"
+                          alt=""
+                          class="img-fluid"
+                          style="height: 400px"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <h1>BANANA</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sapiente veritatis ipsam vero expedita eos ab
+                          totam aliquam. Quidem itaque provident veritatis ab
+                          quaerat maiores!
+                          <br />
+                          <br />
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aut molestias ea ad eveniet quo illum dicta id
+                          tempora soluta dolor voluptate neque quod tempore, sit
+                          labore voluptatem cupiditate delectus quas?
+                        </p>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/puff.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                500 puff
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/salt.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff img-salt"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                2% Salt Nic
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/baterai.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                400 MAh
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="box-price">
+                          <p class="fs-1 text-center">IDR 58.000</p>
+                          <div class="d-grid gap-2 d-md-block">
+                            <button
+                              type="button"
+                              class="btn text-white button-product button-product-rev rounded p-2 px-5"
+                              style="width: 100%"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="box-warning text-center p-3">
+                          <h5>PERINGATAN:</h5>
+                          <p>
+                            Produk ini mengandung nikotin yang merupakan <br />
+                            bahan kimia bersifat adiktif.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="item">
+              <div class="card-vape p-3">
+                <div class="row">
+                  <div
+                    class="col-12"
+                    style="cursor: zoom-in"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="shader">
+                      <img
+                        src="assets/images/product/asset-3.png"
+                        alt=""
+                        class="img-fluid product-rounded"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <p class="fs-5 text-dark">Mint</p>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <button
+                      type="button"
+                      class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                    >
+                      <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-0">
+                  <div class="modal-body p-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12 text-end">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img
+                          src="assets/images/product/Vape-1.png"
+                          alt=""
+                          class="img-fluid"
+                          style="height: 400px"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <h1>BANANA</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sapiente veritatis ipsam vero expedita eos ab
+                          totam aliquam. Quidem itaque provident veritatis ab
+                          quaerat maiores!
+                          <br />
+                          <br />
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aut molestias ea ad eveniet quo illum dicta id
+                          tempora soluta dolor voluptate neque quod tempore, sit
+                          labore voluptatem cupiditate delectus quas?
+                        </p>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/puff.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                500 puff
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/salt.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff img-salt"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                2% Salt Nic
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/baterai.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                400 MAh
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="box-price">
+                          <p class="fs-1 text-center">IDR 58.000</p>
+                          <div class="d-grid gap-2 d-md-block">
+                            <button
+                              type="button"
+                              class="btn text-white button-product button-product-rev rounded p-2 px-5"
+                              style="width: 100%"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="box-warning text-center p-3">
+                          <h5>PERINGATAN:</h5>
+                          <p>
+                            Produk ini mengandung nikotin yang merupakan <br />
+                            bahan kimia bersifat adiktif.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="item">
+              <div class="card-vape p-3">
+                <div class="row">
+                  <div
+                    class="col-12"
+                    style="cursor: zoom-in"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div class="shader">
+                      <img
+                        src="assets/images/product/asset-3.png"
+                        alt=""
+                        class="img-fluid product-rounded"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <p class="fs-5 text-dark">Mint</p>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                    <button
+                      type="button"
+                      class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                    >
+                      <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-0">
+                  <div class="modal-body p-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12 text-end">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img
+                          src="assets/images/product/Vape-1.png"
+                          alt=""
+                          class="img-fluid"
+                          style="height: 400px"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <h1>BANANA</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sapiente veritatis ipsam vero expedita eos ab
+                          totam aliquam. Quidem itaque provident veritatis ab
+                          quaerat maiores!
+                          <br />
+                          <br />
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aut molestias ea ad eveniet quo illum dicta id
+                          tempora soluta dolor voluptate neque quod tempore, sit
+                          labore voluptatem cupiditate delectus quas?
+                        </p>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/puff.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                500 puff
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/salt.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff img-salt"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                2% Salt Nic
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                          <a href="#" class="btn btn-puff-2 fs-4">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-4">
+                                <img
+                                  src="assets/images/product-all/baterai.png"
+                                  alt="puff"
+                                  class="img-fluid text-start img-puff"
+                                />
+                              </div>
+                              <div class="col-md-8" style="font-size: 20px">
+                                400 MAh
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="box-price">
+                          <p class="fs-1 text-center">IDR 58.000</p>
+                          <div class="d-grid gap-2 d-md-block">
+                            <button
+                              type="button"
+                              class="btn text-white button-product button-product-rev rounded p-2 px-5"
+                              style="width: 100%"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="box-warning text-center p-3">
+                          <h5>PERINGATAN:</h5>
+                          <p>
+                            Produk ini mengandung nikotin yang merupakan <br />
+                            bahan kimia bersifat adiktif.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 my-auto">
+            <p class="text-center fs-5">
+              Untuk yang <br />
+              butuh ekstra
+            </p>
+            <div class="tombol fit">
+              <a href="./fit.html#section-2" class="link-tombol-page">
+                <div class="text-square header-fonts">
+                  <img
+                    src="./assets/images/fit-logo.png"
+                    alt=""
+                    class="img-mind"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 3 -- Section Pilihan Rasa -->
+
+    <!-- Section 4 -- Section Hot Promo -->
+    <section id="section-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-end mb-3">
+            <div class="text-center mb-3">
+              <img
+                src="assets/images/promo/Hot Promo.png"
+                alt="hot-promo"
+                class="img-fluid judul-logo-section"
+              />
+            </div>
+
+            <a
+              href="hot_promo.html"
+              class="text-decoration-none text-end text-dark"
+            >
+              Lihat Semua Promo <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+          </div>
+          <div class="col-md-12">
+            <div
+              class="carousel"
+              data-flickity='{ "autoPlay": true, "prevNextButtons": false, "pageDots": false }'
+            >
+              <div class="carousel-cell">
+                <div class="card mx-2 p-2">
+                  <div class="row g-0 d-flex align-items-center">
+                    <div
+                      class="col-sm-5 border-radius-50px"
+                      style="background: #868e96; height: 300px"
+                    >
+                      <img
+                        src="assets/images/promo/promo.png"
+                        class="card-img-top h-100"
+                        alt="image-promo-1"
+                      />
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          LANDYARD KEREN <br />
+                          <b>GRATIS!</b>
+                        </h2>
+                        <p class="card-text text-promo">
+                          1000 pembeli pertama Cocopav FIT jenis apa aja akan
+                          mendapatkan LANDYARD KEREN GRATIS! Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quo iste sunt
+                          eos?
+                        </p>
+                        <a href="" class="btn btn-promo my-3 text-center"
+                          >Cek Detail</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 p-2">
+                  <div class="row g-0 d-flex align-items-center">
+                    <div
+                      class="col-sm-5 border-radius-50px"
+                      style="background: #868e96; height: 300px"
+                    >
+                      <img
+                        src="assets/images/promo/promo.png"
+                        class="card-img-top h-100"
+                        alt="image-promo-1"
+                      />
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          LANDYARD KEREN <br />
+                          <b>GRATIS!</b>
+                        </h2>
+                        <p class="card-text text-promo">
+                          1000 pembeli pertama Cocopav FIT jenis apa aja akan
+                          mendapatkan LANDYARD KEREN GRATIS! Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quo iste sunt
+                          eos?
+                        </p>
+                        <a href="#" class="btn btn-promo my-3 text-center"
+                          >Cek Detail</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 p-2">
+                  <div class="row g-0 d-flex align-items-center">
+                    <div
+                      class="col-sm-5 border-radius-50px"
+                      style="background: #868e96; height: 300px"
+                    >
+                      <img
+                        src="https://i.pinimg.com/originals/af/68/9e/af689ece1aa3e9d67cd821d52db6e49a.png"
+                        class="card-img-top h-100"
+                        alt="image-promo-1"
+                      />
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          LANDYARD KEREN <br />
+                          <b>GRATIS!</b>
+                        </h2>
+                        <p class="card-text text-promo">
+                          1000 pembeli pertama Cocopav FIT jenis apa aja akan
+                          mendapatkan LANDYARD KEREN GRATIS! Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quo iste sunt
+                          eos?
+                        </p>
+                        <a href="#" class="btn btn-promo my-3 text-center"
+                          >Cek Detail</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 p-2">
+                  <div class="row g-0 d-flex align-items-center">
+                    <div
+                      class="col-sm-5 border-radius-50px"
+                      style="background: #868e96; height: 300px"
+                    >
+                      <img
+                        src="assets/images/promo/promo.png"
+                        class="card-img-top h-100"
+                        alt="image-promo-1"
+                      />
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          LANDYARD KEREN <br />
+                          <b>GRATIS!</b>
+                        </h2>
+                        <p class="card-text text-promo">
+                          1000 pembeli pertama Cocopav FIT jenis apa aja akan
+                          mendapatkan LANDYARD KEREN GRATIS! Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quo iste sunt
+                          eos?
+                        </p>
+                        <a href="#" class="btn btn-promo my-3 text-center"
+                          >Cek Detail</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 p-2">
+                  <div class="row g-0 d-flex align-items-center">
+                    <div
+                      class="col-sm-5 border-radius-50px"
+                      style="background: #868e96; height: 300px"
+                    >
+                      <img
+                        src="assets/images/promo/promo.png"
+                        class="card-img-top h-100"
+                        alt="image-promo-1"
+                      />
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          LANDYARD KEREN <br />
+                          <b>GRATIS!</b>
+                        </h2>
+                        <p class="card-text text-promo">
+                          1000 pembeli pertama Cocopav FIT jenis apa aja akan
+                          mendapatkan LANDYARD KEREN GRATIS! Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quo iste sunt
+                          eos?
+                        </p>
+                        <a href="#" class="btn btn-promo my-3 text-center"
+                          >Cek Detail</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 p-2">
+                  <div class="row g-0 d-flex align-items-center">
+                    <div
+                      class="col-sm-5 border-radius-50px"
+                      style="background: #868e96; height: 300px"
+                    >
+                      <img
+                        src="assets/images/promo/promo.png"
+                        class="card-img-top h-100"
+                        alt="image-promo-1"
+                      />
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          LANDYARD KEREN <br />
+                          <b>GRATIS!</b>
+                        </h2>
+                        <p class="card-text text-promo">
+                          1000 pembeli pertama Cocopav FIT jenis apa aja akan
+                          mendapatkan LANDYARD KEREN GRATIS! Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quo iste sunt
+                          eos?
+                        </p>
+                        <a href="#" class="btn btn-promo my-3 text-center"
+                          >Cek Detail</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 4 -- Section Hot Promo -->
+
+    <!-- Section 6 -- Section Contact Us -->
+    <section id="section-6">
+      <div class="container">
+        <div class="judul-container">
+          <img
+            class="judul-logo-section"
+            src="./assets/images/contact-us-logo.png"
+            alt="contact-us"
+          />
+        </div>
+
+        <div class="contact-box">
+          <a class="instagram" href="">
+            <div class="circle-contact">
+              <img src="./assets/images/IG.png" alt="instagram-icon" />
+            </div>
+            <p>Instagram</p>
+          </a>
+          <a class="facebook" href="">
+            <div class="circle-contact">
+              <img src="./assets/images/FB.png" alt="facebook-icon" />
+            </div>
+            <p>Facebook</p>
+          </a>
+          <a class="tokopedia" href="">
+            <div class="circle-contact">
+              <img src="./assets/images/Tokopedia.png" alt="tokopedia-icon" />
+            </div>
+            <p>Tokopedia</p>
+          </a>
+          <a class="shopee" href="">
+            <div class="circle-contact">
+              <img src="./assets/images/Shopee.png" alt="shopee-icon" />
+            </div>
+            <p>Shopee</p>
+          </a>
+          <a class="whatsapp" href="">
+            <div class="circle-contact">
+              <img src="./assets/images/Wa.png" alt="whatsapp-icon" />
+            </div>
+            <p>Hubungi Kami</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Section 6 -- Section Contact Us -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 kolom-perusahaan">
+            <img
+              class="logo-footer"
+              src="./assets/images/logo.webp"
+              alt="logo-cocopav"
+            />
+            <p class="nama-perusahaan"><b>PT. Negara Teguh Jaya</b></p>
+            <p class="alamat-perusahaan">Tangerang - Indonesia</p>
+          </div>
+          <div class="col-lg-3 mb-lg-5 kolom-link-page">
+            <a href="">
+              <div class="link-hover">Tentang Cocopav</div>
+            </a>
+            <a href="">
+              <div class="link-hover">HOT Promo</div>
+            </a>
+            <a href="">
+              <div class="link-hover">Partner</div>
+            </a>
+            <a href="">
+              <div class="link-hover">Hubungi Kami</div>
+            </a>
+          </div>
+          <div class="col-lg-3 kolom-link-pods">
+            <p class="judul-link judul-pods">PODS</p>
+            <a href="">
+              <div class="link-hover">Cocopav LITE</div>
+            </a>
+            <a href="">
+              <div class="link-hover">Cocopav FIT</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-lg-5 kolom-link-beli">
+            <p class="judul-link judul-beli">BELI ONLINE</p>
+            <a href="">
+              <div class="link-hover">Tokopedia</div>
+            </a>
+            <a href="">
+              <div class="link-hover">Shopee</div>
+            </a>
+          </div>
+          <div class="col-lg-4 kolom-kontak">
+            <a href="">
+              <div class="contact-whatsapp">
+                <img src="./assets/images/wa-color.png" alt="whatsapp" />
+                <div class="contact-text">
+                  <p>Chat dengan kami</p>
+                  <p>0813 9933 2020</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 icon-footer">
+            <img src="./assets/images/footer-icon1.png" alt="footer-icon" />
+            <img src="./assets/images/footer-icon2.png" alt="footer-icon" />
+            <img src="./assets/images/footer-icon3.png" alt="footer-icon" />
+          </div>
+          <div class="col-lg-5 peringatan-anak">
+            <p><b>Peringatan:</b></p>
+            <p>
+              Tidak dijual untuk anak dibawah umur dan wanita hamil. Jauhkan
+              dari jangkauan anak-anak serta hewan peliharaan.
+            </p>
+          </div>
+          <div class="col-12 pt-5 mb-3 peringatan-nikotin">
+            <div class="kotak-peringatan">
+              <p><b>Peringatan:</b></p>
+              <p>
+                Produk ini mengandung nikotin yang merupakan bahan kimia
+                bersifat adiktif.
+              </p>
+            </div>
+          </div>
+          <p class="text-center copyright-text">
+            2020©Cocopav. All right reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Jquery -->
+
+    <!-- Bootstrap CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CDN -->
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <!-- GSAP CDN -->
+
+    <!-- GSAP SCROLLTRIGGER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <!-- GSAP SCROLLTRIGGER -->
+
+    <!-- OWL CAROUSELL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- END OWL CAROUSELL -->
+
+    <!-- FLICKITY -->
+    <script src="assets/js-extra/flickity.pkgd.js"></script>
+
+    <!-- FLICKITY -->
+
+    <!-- GSAP DRAGGABLE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"></script>
+    <!-- GSAP DRAGGABLE -->
+
+    <script src="assets/script.js"></script>
+    <script src="assets/script2.js"></script>
+  </body>
+</html>

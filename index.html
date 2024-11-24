@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cocopav</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CDN -->
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fontawesome -->
+
+    <!-- OWL CAROUSELL -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- OWL CAROUSELL -->
+
+    <!-- FLICKITY -->
+    <link rel="stylesheet" href="assets/css-extra/flickity.min.css" />
+
+    <!-- FLIKITY -->
+    <link rel="stylesheet" href="assets/styleumum.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style2.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent" style="z-index: 99">
+      <div
+        class="box-navbar position-absolute w-100"
+        style="top: -500px; z-index: 99"
+        id="navbar-responsive-top"
+      >
+        <div class="container">
+          <div class="row">
+            <div onclick="navbarUnResponsive()" class="col-md-12 text-end">
+              <span>X</span>
+            </div>
+            <div class="col-md-12 text-center">
+              <p class="fw-bold">PODS</p>
+            </div>
+            <div class="col-md-12 w-100 mb-2 text-center">
+              <div class="m-auto button-nav" style="width: 200px">
+                <a
+                  href="product_lite.html"
+                  class="text-decoration-none text-dark"
+                  >Cocopav LITE</a
+                >
+              </div>
+            </div>
+            <div class="col-md-12 w-100 mb-2 text-center">
+              <div class="m-auto button-nav" style="width: 200px">
+                <a
+                  href="product_fit.html"
+                  class="text-decoration-none text-dark"
+                  >Cocopav FIT</a
+                >
+              </div>
+            </div>
+            <hr />
+            <div class="col-md-12 w-100 mb-2 text-center">
+              <div class="m-auto button-nav" style="width: 200px">
+                <a href="hot_promo.html" class="text-decoration-none text-dark"
+                  >HOT Promo</a
+                >
+              </div>
+            </div>
+            <div class="col-md-12 w-100 mb-2 text-center">
+              <div class="m-auto button-nav" style="width: 200px">
+                <a href="#" class="text-decoration-none text-dark">Partner</a>
+              </div>
+            </div>
+            <div class="col-md-12 w-100 mb-2 text-center">
+              <div class="m-auto button-nav" style="width: 200px">
+                <a href="#" class="text-decoration-none text-dark"
+                  >Hubungi Kami</a
+                >
+              </div>
+            </div>
+            <div class="col-md-12 mt-2 text-center">
+              <p class="text-white">HOME</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <a class="navbar-brand text-center" href="index.html">
+          <img
+            src="assets/images/logo.png"
+            alt="logo"
+            class="img-fluid img-nav"
+          />
+        </a>
+
+        <div
+          class="p-2 d-flex align-items-center position-relative d-block d-md-none"
+          style="border-radius: 50px; background-color: #f4dc10"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute">
+            <li class="nav-item dropdown">
+              <span
+                class="nav-link dropdown-toggle btn btn-circle radius-circle btn-md fs-5 neu-outset-nav"
+                href="#"
+                data-bs-toggle="dropdown"
+                onclick="navbarResponsive()"
+              >
+                <img src="./assets/images/Menu_icon.svg" />
+              </span>
+            </li>
+          </ul>
+
+          <button
+            type="button"
+            class="btn text-white neu-outset-nav-green rounded px-4 py-2"
+            style="margin-left: 60px"
+          >
+            <img class="buy-icon" src="./assets/images/Buy_icon.svg" /> Beli
+            Cocopav
+          </button>
+        </div>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="justify-content: flex-end"
+        >
+          <ul class="navbar-nav mr-auto d-block d-md-none text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="product_fit.html">Pods </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#section-5">Hot Promo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hubungi Kami</a>
+            </li>
+          </ul>
+          <div
+            class="d-flex d-none d-md-flex p-3"
+            style="border-radius: 50px; background-color: #f4dc10"
+          >
+            <button
+              class="btn btn-circle radius-circle btn-md fs-5 neu-inset-nav"
+            >
+              <a href="index.html" class="text-dark">
+                <img src="./assets/images/Home_icon.svg" />
+              </a>
+            </button>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-relative">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle btn btn-circle radius-circle btn-md fs-5 neu-outset-nav ms-3"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <img src="./assets/images/Menu_icon.svg" />
+                </a>
+                <ul class="dropdown-menu">
+                  <div class="segitiga"></div>
+                  <li>
+                    <a class="dropdown-item" href="product_fit.html"> Pods</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/#section-4"> Hot Promo </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/#section-5"> Partner </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <button
+              type="button"
+              class="btn text-white neu-outset-nav-green rounded ms-3 px-4 py-0"
+            >
+              <img class="buy-icon" src="./assets/images/Buy_icon.svg" /> Beli
+              Cocopav
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- SLIDER DESKTOP -->
+
+    <!-- Section 1 -- Section Banner Slider -->
+    <section id="section-1" class="d-none d-md-block">
+      <div class="container-fluid p-0">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/images/slider/Slider_1920x600_01.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/images/slider/Slider_1920x600_02.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SLIDER DESKTOP -->
+
+    <section id="section-1" class="mobile ss d-block d-md-none">
+      <div class="container-fluid p-0" style="margin-top: -130px">
+        <div
+          id="carouselExampleIndicators2"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 80vh">
+              <img
+                src="assets/images/slider/Slider_1920x600_01.jpg"
+                class="d-block w-100"
+                alt="..."
+                style="object-fit: cover; height: 100%"
+              />
+            </div>
+            <div class="carousel-item" style="height: 80vh">
+              <img
+                src="assets/images/slider/Slider_1920x600_02.jpg"
+                class="d-block w-100"
+                alt="..."
+                style="object-fit: cover; height: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 1 -- Section Banner Slider -->
+
+    <!-- Section 2 -- Section Pods -->
+    <section id="section-2">
+      <div class="container-fluid">
+        <div class="text-keterangan text-center">
+          <p>
+            Sebagai brand disposable pods asli Indonesia,
+            <b>COCOPAV</b> menghadirkan era baru dalam merokok elektrik. Pods
+            Kekinian tanpa recharge, tanpa refill, dan anti ribet. Hadir dalam 2
+            Varian untuk memenuhi kebutuhan kalian, <b>COCOPAV LITE</b> &
+            <b>COCOPAV FIT</b>, serta banyak varian rasa yang bikin kalian
+            rindu!
+          </p>
+        </div>
+        <img
+          class="arrow-down"
+          src="./assets/images/lite/arrowdown.webp"
+          alt="arrow-down"
+        />
+      </div>
+      <div class="container container-tengah">
+        <img
+          class="floating-img fti-1"
+          src="./assets/images/floating/floating1.png"
+        />
+        <img
+          class="floating-img fti-2"
+          src="./assets/images/floating/floating2.png"
+        />
+        <img
+          class="floating-img fti-1"
+          src="./assets/images/floating/floating3.png"
+        />
+        <img
+          class="floating-img fti-2"
+          src="./assets/images/floating/floating4.png"
+        />
+        <img
+          class="floating-img fti-1"
+          src="./assets/images/floating/floating5.png"
+        />
+        <img
+          class="floating-img fti-2"
+          src="./assets/images/floating/floating6.png"
+        />
+        <img
+          class="floating-img fti-1"
+          src="./assets/images/floating/floating7.png"
+        />
+        <img
+          class="floating-img fti-2"
+          src="./assets/images/floating/floating8.png"
+        />
+        <img
+          class="floating-img fti-1"
+          src="./assets/images/floating/floating9.png"
+        />
+        <img
+          class="floating-img fti-1"
+          src="./assets/images/floating/floating10.png"
+        />
+        <img
+          class="floating-img fti-2"
+          src="./assets/images/floating/floating11.png"
+        />
+        <img
+          class="floating-img fti-2"
+          src="./assets/images/floating/floating12.png"
+        />
+        <img
+          class="floating-img fti-1"
+          src="./assets/images/floating/floating13.png"
+        />
+        <img
+          class="floating-img fti-1"
+          src="./assets/images/floating/floating14.png"
+        />
+        <img
+          class="floating-img fti-2"
+          src="./assets/images/floating/floating15.png"
+        />
+        <img
+          class="floating-img fti-2"
+          src="./assets/images/floating/floating16.png"
+        />
+        <img
+          class="floating-img fti-1"
+          src="./assets/images/floating/floating17.png"
+        />
+        <img
+          class="floating-img fti-2"
+          src="./assets/images/floating/floating18.png"
+        />
+        <img
+          class="floating-img fti-1"
+          src="./assets/images/floating/floating19.png"
+        />
+        <img
+          class="floating-img fti-1"
+          src="./assets/images/floating/floating20.png"
+        />
+        <img
+          class="floating-img fti-2"
+          src="./assets/images/floating/floating21.png"
+        />
+        <div class="text-center mb-3">
+          <img
+            class="judul-logo-section"
+            src="./assets/images/pods-logo.png"
+            alt="pods"
+          />
+        </div>
+        <div class="row row-btn-choose">
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="tombol tombol-lite tombol-active">
+              <a href="#" class="link-tombol-page">
+                <div class="text-square header-fonts">
+                  <img src="./assets/images/lite-logo.png" alt="lite" />
+                </div>
+              </a>
+            </div>
+            <div class="tombol tombol-fit">
+              <a href="./fit.html#section-2" class="link-tombol-page">
+                <div class="text-square header-fonts">
+                  <img src="./assets/images/fit-logo.png" alt="" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row row-pods">
+          <div class="col-pods">
+            <img
+              class="vape-1"
+              src="./assets/images/lite/Vape 1.webp"
+              alt="vape"
+            />
+          </div>
+          <div class="col-pods">
+            <img
+              class="vape-2"
+              src="./assets/images/lite/Vape 2.webp"
+              alt="vape"
+            />
+          </div>
+          <div class="col-pods slide-pods mb-5">
+            <p>Slide <i class="fa-solid fa-arrow-right-long"></i></p>
+            <div class="pods-slider">
+              <div class="slider-drag sd-1">
+                <img
+                  src="./assets/images/lite/slider-icon-1.svg"
+                  alt="slider-icon"
+                />
+              </div>
+              <div class="pods-slider-warna psw-1">
+                <h1>500 <span>puff</span></h1>
+              </div>
+              <div class="pods-slider-polos">
+                <p>
+                  Jumlah Puff ini setara dengan kamu merokok selama kurang lebih
+                  satu minggu
+                </p>
+              </div>
+            </div>
+            <div class="pods-slider">
+              <div class="slider-drag sd-2">
+                <img
+                  src="./assets/images/lite/slider-icon-2.svg"
+                  alt="slider-icon"
+                />
+              </div>
+              <div class="pods-slider-warna psw-2">
+                <h1>2% <span>salt nic</span></h1>
+              </div>
+              <div class="pods-slider-polos">
+                <p>
+                  Mengandung e-liquid 2.2 ml dengan berbagai rasa bikin rindu
+                </p>
+              </div>
+            </div>
+            <div class="pods-slider">
+              <div class="slider-drag sd-3">
+                <img
+                  src="./assets/images/lite/slider-icon-3.svg"
+                  alt="slider-icon"
+                />
+              </div>
+              <div class="pods-slider-warna psw-3">
+                <h1>400 <span>mAh</span></h1>
+              </div>
+              <div class="pods-slider-polos">
+                <p>
+                  Si kecil yang tangguh dengan kapasitas baterai yang tahan lama
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-pods col-praktis">
+            <h1>PRAKTIS, SIMPLE & ANTI RIBET!</h1>
+          </div>
+          <div class="col-pods mb-5">
+            <div class="praktis">
+              <img
+                src="./assets/images/lite/Tanpa Refill.png"
+                alt="tanpa refill"
+              />
+              <p>Tanpa Refill</p>
+            </div>
+            <div class="praktis">
+              <img
+                src="./assets/images/lite/Tanpa di Charge.png"
+                alt="tanpa recharge"
+              />
+              <p>Tanpa Recharge</p>
+            </div>
+            <div class="praktis">
+              <img
+                src="./assets/images/lite/Langsung Hisap.png"
+                alt="Langsung Hisap"
+              />
+              <p>Langsung Hisap</p>
+            </div>
+          </div>
+          <div class="col-lg-7 col-hand">
+            <div class="circle-way">
+              <div class="lingkaran-kecil"></div>
+            </div>
+            <div class="kotak-overflow">
+              <div class="arrow-slide-box">
+                <p>Slide</p>
+                <img
+                  class="arrow-slide-lengkung"
+                  src="./assets/images/lite/arrow.png"
+                />
+              </div>
+              <div class="lingkaran-gradient">
+                <div class="background-abu"></div>
+                <div class="lingkaran-abu"></div>
+                <div class="shadow-circle"></div>
+              </div>
+            </div>
+            <div class="overflow-tangan">
+              <img
+                class="gambar-tangan"
+                src="./assets/images/lite/hand.png"
+                alt="tangan"
+              />
+            </div>
+          </div>
+          <div class="col-lg-5 col-dimensi">
+            <div>
+              <p>Dimensi<br />Super Compact</p>
+              <div class="d-flex">
+                <div class="dimensi-img">
+                  <img
+                    src="./assets/images/lite/dimensi-icon-1.png"
+                    alt="icon-penggaris"
+                  />
+                </div>
+                <h1><span class="tinggi-vape">0</span> cm</h1>
+              </div>
+              <div class="d-flex">
+                <div class="dimensi-img">
+                  <img
+                    src="./assets/images/lite/dimensi-icon-2.png"
+                    alt="icon-penggaris"
+                  />
+                </div>
+                <h1><span class="berat-vape">0</span> gr</h1>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img
+              class="arrow-down"
+              src="./assets/images/lite/arrowdown2.webp"
+              alt="arrow-down"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2 -- Section Pods -->
+
+    <!-- Section 3 -- Section Pilihan Rasa -->
+    <section id="section-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>PILIHAN RASA YANG BIKIN RINDU</h1>
+            <p class="mt-3 fs-6">
+              Cocopav saat ini punya 11 pilihan rasa yang dijamin bikin kamu
+              rindu berat. Setiap rasa memiliki keunikan dan <br />
+              ciri khas masing-masing. Yuk cobain semua rasanya sebelum
+              kehabisan!
+            </p>
+          </div>
+          <div class="col-md-12 mt-3">
+            <div class="owl-slider">
+              <div id="carousel" class="owl-carousel">
+                <div class="item">
+                  <div class="card-vape p-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="shader">
+                          <img
+                            src="assets/images/product/asset 1.png"
+                            alt=""
+                            class="img-fluid product-rounded"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <p class="fs-5">Cotton Candy</p>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <button
+                          type="button"
+                          class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                        >
+                          <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card-vape p-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="shader">
+                          <img
+                            src="assets/images/product/asset-2.png"
+                            alt=""
+                            class="img-fluid product-rounded"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <p class="fs-5">Honevdew Melon Ice</p>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <button
+                          type="button"
+                          class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                        >
+                          <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card-vape p-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="shader">
+                          <img
+                            src="assets/images/product/asset-3.png"
+                            alt=""
+                            class="img-fluid product-rounded"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <p class="fs-5">Mint</p>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <button
+                          type="button"
+                          class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                        >
+                          <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card-vape p-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="shader">
+                          <img
+                            src="assets/images/product/asset-4.png"
+                            alt=""
+                            class="img-fluid product-rounded"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <p class="fs-5">O.M.G</p>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <button
+                          type="button"
+                          class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                        >
+                          <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card-vape p-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="shader">
+                          <img
+                            src="assets/images/product/asset 1.png"
+                            alt=""
+                            class="img-fluid product-rounded"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <p class="fs-5">Cotton Candy</p>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <button
+                          type="button"
+                          class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                        >
+                          <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card-vape p-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="shader">
+                          <img
+                            src="assets/images/product/asset-2.png"
+                            alt=""
+                            class="img-fluid product-rounded"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <p class="fs-5">Honevdew Melon Ice</p>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <button
+                          type="button"
+                          class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                        >
+                          <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card-vape p-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="shader">
+                          <img
+                            src="assets/images/product/asset-3.png"
+                            alt=""
+                            class="img-fluid product-rounded"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <p class="fs-5">Mint</p>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <button
+                          type="button"
+                          class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                        >
+                          <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card-vape p-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="shader">
+                          <img
+                            src="assets/images/product/asset-4.png"
+                            alt=""
+                            class="img-fluid product-rounded"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <p class="fs-5">O.M.G</p>
+                      </div>
+                      <div class="col-12 mt-3 text-center">
+                        <button
+                          type="button"
+                          class="btn text-white button-product rounded p-2 px-5 product-rev-2"
+                        >
+                          <i class="fa fa-shopping-cart"></i> Beli Cocopav
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 mt-3">
+            <div class="extra-fit p-4 text-center">
+              <div class="row px-md-5 d-flex align-items-center">
+                <div class="col-md-4 text-center">
+                  <h2 class="m-0">MAU YANG EKSTRA?</h2>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="tombol fit">
+                    <div class="text-square header-fonts">
+                      <a href="fit.html">
+                        <img
+                          src="assets/images/fit-logo.png"
+                          alt=""
+                          class="img-fluid img-fit-lite"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <p class="fs-5 m-0">
+                    <i class="fa-solid fa-arrow-left-long"></i> Klik Cocopav FIT
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 3 -- Section Pilihan Rasa -->
+
+    <!-- Section 4 -- Section Hot Promo -->
+    <section id="section-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-end mb-3">
+            <div class="text-center mb-3">
+              <img
+                src="assets/images/promo/Hot Promo.png"
+                alt="hot-promo"
+                class="img-fluid judul-logo-section"
+              />
+            </div>
+
+            <a
+              href="hot_promo.html"
+              class="text-decoration-none text-end text-dark"
+            >
+              Lihat Semua Promo <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+          </div>
+          <div class="col-md-12">
+            <div
+              class="carousel"
+              data-flickity='{ "autoPlay": true, "prevNextButtons": false, "pageDots": false }'
+            >
+              <div class="carousel-cell">
+                <div class="card mx-2 p-2">
+                  <div class="row g-0 d-flex align-items-center">
+                    <div
+                      class="col-sm-5 border-radius-50px"
+                      style="background: #868e96; height: 300px"
+                    >
+                      <img
+                        src="assets/images/promo/promo.png"
+                        class="card-img-top h-100"
+                        alt="image-promo-1"
+                      />
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          LANDYARD KEREN <br />
+                          <b>GRATIS!</b>
+                        </h2>
+                        <p class="card-text text-promo">
+                          1000 pembeli pertama Cocopav FIT jenis apa aja akan
+                          mendapatkan LANDYARD KEREN GRATIS! Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quo iste sunt
+                          eos?
+                        </p>
+                        <a href="" class="btn btn-promo my-3 text-center"
+                          >Cek Detail</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 p-2">
+                  <div class="row g-0 d-flex align-items-center">
+                    <div
+                      class="col-sm-5 border-radius-50px"
+                      style="background: #868e96; height: 300px"
+                    >
+                      <img
+                        src="assets/images/promo/promo.png"
+                        class="card-img-top h-100"
+                        alt="image-promo-1"
+                      />
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          LANDYARD KEREN <br />
+                          <b>GRATIS!</b>
+                        </h2>
+                        <p class="card-text text-promo">
+                          1000 pembeli pertama Cocopav FIT jenis apa aja akan
+                          mendapatkan LANDYARD KEREN GRATIS! Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quo iste sunt
+                          eos?
+                        </p>
+                        <a href="#" class="btn btn-promo my-3 text-center"
+                          >Cek Detail</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 p-2">
+                  <div class="row g-0 d-flex align-items-center">
+                    <div
+                      class="col-sm-5 border-radius-50px"
+                      style="background: #868e96; height: 300px"
+                    >
+                      <img
+                        src="https://i.pinimg.com/originals/af/68/9e/af689ece1aa3e9d67cd821d52db6e49a.png"
+                        class="card-img-top h-100"
+                        alt="image-promo-1"
+                      />
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          LANDYARD KEREN <br />
+                          <b>GRATIS!</b>
+                        </h2>
+                        <p class="card-text text-promo">
+                          1000 pembeli pertama Cocopav FIT jenis apa aja akan
+                          mendapatkan LANDYARD KEREN GRATIS! Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quo iste sunt
+                          eos?
+                        </p>
+                        <a href="#" class="btn btn-promo my-3 text-center"
+                          >Cek Detail</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 p-2">
+                  <div class="row g-0 d-flex align-items-center">
+                    <div
+                      class="col-sm-5 border-radius-50px"
+                      style="background: #868e96; height: 300px"
+                    >
+                      <img
+                        src="assets/images/promo/promo.png"
+                        class="card-img-top h-100"
+                        alt="image-promo-1"
+                      />
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          LANDYARD KEREN <br />
+                          <b>GRATIS!</b>
+                        </h2>
+                        <p class="card-text text-promo">
+                          1000 pembeli pertama Cocopav FIT jenis apa aja akan
+                          mendapatkan LANDYARD KEREN GRATIS! Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quo iste sunt
+                          eos?
+                        </p>
+                        <a href="#" class="btn btn-promo my-3 text-center"
+                          >Cek Detail</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 p-2">
+                  <div class="row g-0 d-flex align-items-center">
+                    <div
+                      class="col-sm-5 border-radius-50px"
+                      style="background: #868e96; height: 300px"
+                    >
+                      <img
+                        src="assets/images/promo/promo.png"
+                        class="card-img-top h-100"
+                        alt="image-promo-1"
+                      />
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          LANDYARD KEREN <br />
+                          <b>GRATIS!</b>
+                        </h2>
+                        <p class="card-text text-promo">
+                          1000 pembeli pertama Cocopav FIT jenis apa aja akan
+                          mendapatkan LANDYARD KEREN GRATIS! Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quo iste sunt
+                          eos?
+                        </p>
+                        <a href="#" class="btn btn-promo my-3 text-center"
+                          >Cek Detail</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 p-2">
+                  <div class="row g-0 d-flex align-items-center">
+                    <div
+                      class="col-sm-5 border-radius-50px"
+                      style="background: #868e96; height: 300px"
+                    >
+                      <img
+                        src="assets/images/promo/promo.png"
+                        class="card-img-top h-100"
+                        alt="image-promo-1"
+                      />
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          LANDYARD KEREN <br />
+                          <b>GRATIS!</b>
+                        </h2>
+                        <p class="card-text text-promo">
+                          1000 pembeli pertama Cocopav FIT jenis apa aja akan
+                          mendapatkan LANDYARD KEREN GRATIS! Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quo iste sunt
+                          eos?
+                        </p>
+                        <a href="#" class="btn btn-promo my-3 text-center"
+                          >Cek Detail</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 4 -- Section Hot Promo -->
+
+    <!-- Section 5 -- Section Partner -->
+    <section id="section-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <img
+                src="assets/images/part.png"
+                alt=""
+                class="img-fluid judul-logo-section"
+              />
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="" id="logoMarqueeSection">
+              <div class="default-content-container flex items-center">
+                <div
+                  class="default-content-container-inner marquee-wrapper relative overflow-hidden inline-block"
+                >
+                  <div class="marquee" style="animation-duration: 57s">
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/calvin-klein.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/tiktok-logo.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/ngk-3.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/asus-rog-1.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/nippon-sanso.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/comdisco.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/aricoin-icon.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/pse-1.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/scien.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/e-online.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/yourhomedirect.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/nextra-3.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                  </div>
+                  <div class="marquee" style="animation-duration: 57s">
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/calvin-klein.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/tiktok-logo.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/ngk-3.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/asus-rog-1.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/nippon-sanso.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/comdisco.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/aricoin-icon.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/pse-1.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/scien.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/e-online.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/yourhomedirect.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                    <a target="_blank"
+                      ><img
+                        src="https://cdn.worldvectorlogo.com/logos/nextra-3.svg"
+                        title=""
+                        class="marqueelogo"
+                        style="width: auto; max-width: none; height: 50px"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 5 -- Section Partner -->
+
+    <!-- Section 6 -- Section Contact Us -->
+    <section id="section-6">
+      <div class="container">
+        <div class="judul-container">
+          <img
+            class="judul-logo-section"
+            src="./assets/images/contact-us-logo.png"
+            alt="contact-us"
+          />
+        </div>
+
+        <div class="contact-box">
+          <a class="instagram" href="">
+            <div class="circle-contact">
+              <img src="./assets/images/IG.png" alt="instagram-icon" />
+            </div>
+            <p>Instagram</p>
+          </a>
+          <a class="facebook" href="">
+            <div class="circle-contact">
+              <img src="./assets/images/FB.png" alt="facebook-icon" />
+            </div>
+            <p>Facebook</p>
+          </a>
+          <a class="tokopedia" href="">
+            <div class="circle-contact">
+              <img src="./assets/images/Tokopedia.png" alt="tokopedia-icon" />
+            </div>
+            <p>Tokopedia</p>
+          </a>
+          <a class="shopee" href="">
+            <div class="circle-contact">
+              <img src="./assets/images/Shopee.png" alt="shopee-icon" />
+            </div>
+            <p>Shopee</p>
+          </a>
+          <a class="whatsapp" href="">
+            <div class="circle-contact">
+              <img src="./assets/images/Wa.png" alt="whatsapp-icon" />
+            </div>
+            <p>Hubungi Kami</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Section 6 -- Section Contact Us -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 kolom-perusahaan">
+            <img
+              class="logo-footer"
+              src="./assets/images/logo.webp"
+              alt="logo-cocopav"
+            />
+            <p class="nama-perusahaan"><b>PT. Negara Teguh Jaya</b></p>
+            <p class="alamat-perusahaan">Tangerang - Indonesia</p>
+          </div>
+          <div class="col-lg-3 mb-lg-5 kolom-link-page">
+            <a href="#">
+              <div class="link-hover">Tentang Cocopav</div>
+            </a>
+            <a href="hot_promo.html">
+              <div class="link-hover">HOT Promo</div>
+            </a>
+            <a href="/#section-5">
+              <div class="link-hover">Partner</div>
+            </a>
+            <a href="">
+              <div class="link-hover">Hubungi Kami</div>
+            </a>
+          </div>
+          <div class="col-lg-3 kolom-link-pods">
+            <p class="judul-link judul-pods">PODS</p>
+            <a href="">
+              <div class="link-hover">Cocopav LITE</div>
+            </a>
+            <a href="">
+              <div class="link-hover">Cocopav FIT</div>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-lg-5 kolom-link-beli">
+            <p class="judul-link judul-beli">BELI ONLINE</p>
+            <a href="">
+              <div class="link-hover">Tokopedia</div>
+            </a>
+            <a href="">
+              <div class="link-hover">Shopee</div>
+            </a>
+          </div>
+          <div class="col-lg-4 kolom-kontak">
+            <a href="">
+              <div class="contact-whatsapp">
+                <img src="./assets/images/wa-color.png" alt="whatsapp" />
+                <div class="contact-text">
+                  <p>Chat dengan kami</p>
+                  <p>0813 9933 2020</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 icon-footer">
+            <img src="./assets/images/footer-icon1.png" alt="footer-icon" />
+            <img src="./assets/images/footer-icon2.png" alt="footer-icon" />
+            <img src="./assets/images/footer-icon3.png" alt="footer-icon" />
+          </div>
+          <div class="col-lg-5 peringatan-anak">
+            <p><b>Peringatan:</b></p>
+            <p>
+              Tidak dijual untuk anak dibawah umur dan wanita hamil. Jauhkan
+              dari jangkauan anak-anak serta hewan peliharaan.
+            </p>
+          </div>
+          <div class="col-12 pt-5 mb-3 peringatan-nikotin">
+            <div class="kotak-peringatan">
+              <p><b>Peringatan:</b></p>
+              <p>
+                Produk ini mengandung nikotin yang merupakan bahan kimia
+                bersifat adiktif.
+              </p>
+            </div>
+          </div>
+          <p class="text-center copyright-text">
+            2020©Cocopav. All right reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Jquery -->
+
+    <!-- Bootstrap CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CDN -->
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <!-- GSAP CDN -->
+
+    <!-- GSAP SCROLLTRIGGER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <!-- GSAP SCROLLTRIGGER -->
+
+    <!-- OWL CAROUSELL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- END OWL CAROUSELL -->
+
+    <!-- FLICKITY -->
+    <script src="assets/js-extra/flickity.pkgd.js"></script>
+
+    <!-- FLICKITY -->
+
+    <!-- GSAP DRAGGABLE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"></script>
+    <!-- GSAP DRAGGABLE -->
+
+    <script src="assets/script.js"></script>
+    <script src="assets/script2.js"></script>
+  </body>
+</html>

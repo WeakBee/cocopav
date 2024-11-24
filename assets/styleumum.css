@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --background1: #f4dc10;
+  --background2: #a8cfcc;
+  --background3: #f599a8;
+  --background4: #9e84ce;
+  --background5: #343233;
+
+  --hijau: #7dc243;
+  --hijaumuda: #c6de90;
+  --hitam: #313131;
+  --pink: #f599a8;
+  --birumuda: #a8cfcc;
+  --birumuda2: #78bec6;
+  --oren: #e66c43;
+  --putih: #ffffff;
+  --merah: #d8393e;
+  --merahtua: #97242b;
+  --merahmuda: #f4616b;
+  --ungutua: #595578;
+  --ungutua2: #7660a9;
+  --ungu: #827eb1;
+  --ungumuda: #aba5d1;
+  --abuabu: #e6e7e9;
+}
+/* FONT */
+@font-face {
+  font-family: headerFonts;
+  src: url("/assets/fonts/SimplaformDEMO\ 2.otf");
+}
+/* END FONT */
+.header-fonts {
+  font-family: headerFonts !important;
+}
+.text-kuning {
+  color: var(--background1);
+  font-family: headerFonts !important;
+}
+.text-hijau {
+  color: var(--hijau);
+  font-family: headerFonts !important;
+}
+.text-ungu-muda {
+  font-family: headerFonts !important;
+  color: #b45d9e;
+}
+.text-ungu-tua {
+  font-family: headerFonts !important;
+  color: #75569f;
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* OWL CAROUSELL */
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.owl-nav button.owl-prev {
+  left: -50px;
+}
+.owl-nav button.owl-next {
+  right: -50px;
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: transparent;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #000;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.owl-nav button {
+  position: absolute;
+  top: 40%;
+
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0) !important;
+}
+.owl-prev span,
+.owl-nav span {
+  font-size: 100px;
+  position: relative;
+  top: -5px;
+  color: var(--background2);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.417);
+}
+.owl-nav button:focus {
+  outline: none;
+}
+
+/* END OWL CAROUSELL */
+
+/* Button Product */
+.button-product {
+  background-color: #7dc242;
+  border-radius: 60px !important;
+  transition: all 0.3s;
+  border-radius: 36px;
+  border: none;
+  box-shadow: 5px 5px 9px #0000006c, -5px -5px 9px #ffffff60,
+    inset 2px 2px 2px #abf769;
+}
+@media (max-width: 767px) {
+  #section-3 .product-rounded {
+    height: 150px !important;
+    width: 100% !important;
+  }
+  .button-product.product-rev-2 {
+    width: 100%;
+    padding: 10px !important;
+    font-size: 12px;
+  }
+}
+
+/* Button Product */
+
+/* judul-logo-section */
+.judul-logo-section {
+  height: 50px;
+}
+@media (max-width: 575px) {
+  .judul-logo-section {
+    height: 30px;
+  }
+}
+/* judul-logo-section */
